@@ -1,0 +1,17 @@
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.deps.json
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.runtimeconfig.json
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.dll
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.DataAccess.pdb
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Model.dll
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\bin\Debug\net6.0\ShoppingCart.Model.pdb
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.AssemblyReference.cache
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfoInputs.cache
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.AssemblyInfo.cs
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.csproj.CopyComplete
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.dll
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\refint\ShoppingCart.DataAccess.dll
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.pdb
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ShoppingCart.DataAccess.genruntimeconfig.cache
+C:\Users\train1\Desktop\ShoppingCart\ShoppingCart\Shopping CartProject\ShoppingCart.DataAccess\obj\Debug\net6.0\ref\ShoppingCart.DataAccess.dll

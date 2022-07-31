@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {}
+    "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+    "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
         "projectName": "ShoppingCart.DataAccess",
-        "projectPath": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
+        "projectPath": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj",
         "packagesPath": "C:\\Users\\train1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj": {
-                "projectPath": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj"
+              "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj": {
+                "projectPath": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj"
               }
             }
           }
@@ -48,6 +48,16 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
             }
@@ -71,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj": {
+    "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj",
+        "projectUniqueName": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj",
         "projectName": "ShoppingCart.Model",
-        "projectPath": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj",
+        "projectPath": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\ShoppingCart.Model.csproj",
         "packagesPath": "C:\\Users\\train1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\train1\\Desktop\\Shopping CartProject\\ShoppingCart.Model\\obj\\",
+        "outputPath": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -109,6 +119,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
