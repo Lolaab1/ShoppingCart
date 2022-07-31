@@ -55,17 +55,18 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
-            //var category=categoryRepository.Find(id);
+            var category=categoryRepository.Find(id);
             return View(category);
         }
 
         // POST: CategoryController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, ProductsCategories category)
         {
             try
             {
+                categoryRepository.Update(id, category);
                 return RedirectToAction(nameof(Index));
             }
             catch
