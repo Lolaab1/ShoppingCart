@@ -1,15 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using ShoppingCart.DataAccess;
+using ShoppingCart.DataAccess.Repository;
+using ShoppingCart.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ShoppingCartDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ShoppingCartDB"));
-}
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("ShoppingCartDB"));
+        }
     );
+builder.Services.AddScoped<IShoppingCartRepository<ProductsCategories>, CategoriesRepository>();
+builder.Services.AddScoped<IShoppingCartRepository<Products>, ProductsRepository>();
 
 var app = builder.Build();
 

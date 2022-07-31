@@ -24,7 +24,8 @@ namespace ShoppingCart.DataAccess.Repository
 
         public void Delete(int id)
         {
-            var products = db.Find(id);
+
+            var products = Find(id);
             db.products.Remove(products);
             db.SaveChanges();
         }

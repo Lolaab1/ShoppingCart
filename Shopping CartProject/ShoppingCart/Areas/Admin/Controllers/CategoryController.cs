@@ -1,14 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShoppingCart.DataAccess.Repository;
+using ShoppingCart.Model;
 
 namespace ShoppingCart.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
+        private readonly IShoppingCartRepository<ProductsCategories> categoryRepository;
+
+        public CategoryController(IShoppingCartRepository<ProductsCategories> categoryRepository)
+        {
+            this.categoryRepository = categoryRepository;
+        }
+
+       
         // GET: CategoryController
         public ActionResult Index()
         {
-            return View();
+            var category = categoryRepository.List();
+            return View(category);
         }
 
         // GET: CategoryController/Details/5
