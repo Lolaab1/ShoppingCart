@@ -128,7 +128,8 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // GET: ProductController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var products = productRepository.Find(id);
+            return View(products);
         }
 
         // POST: ProductController/Delete/5
@@ -138,6 +139,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
         {
             try
             {
+                productRepository.Delete(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ShoppingCart.DataAccess.Repository;
+
+using ShoppingCart.Model;
 using ShoppingCart.Models;
 using System.Diagnostics;
 
@@ -7,16 +10,29 @@ namespace ShoppingCart.Controllers
     [Area("Customer")]
     public class HomeController : Controller
     {
+        private readonly IShoppingCartRepository<Products> productRepository;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IShoppingCartRepository<Products> productRepository)
         {
             _logger = logger;
+            this.productRepository = productRepository;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var product = productRepository.List();
+            return View(product);
+        }
+        public ActionResult Details(int id)
+        {
+            Cart cart = new Cart()
+            {
+                Products = productRepository.Find(id),
+                Count = 1,
+                ProductId = id
+            };
+            return View(cart);
         }
 
         public IActionResult Privacy()
