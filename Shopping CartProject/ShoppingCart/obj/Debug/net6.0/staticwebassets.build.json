@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "en/tUCs0T+kFeaDf3BeYkkbZPHLL4q/77TdwGDSy9u0=",
+  "Hash": "sjjgq9U5T+4Moav2bs8Bx4OQcDx/7mHD97M5fD4IQgE=",
   "Source": "ShoppingCart",
   "BasePath": "_content/ShoppingCart",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShoppingCart.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart\\wwwroot\\css\\Minty.css",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "css/Minty.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Minty.css"
     },
     {
       "Identity": "C:\\Users\\train1\\Desktop\\ShoppingCart\\ShoppingCart\\Shopping CartProject\\ShoppingCart\\wwwroot\\css\\site.css",

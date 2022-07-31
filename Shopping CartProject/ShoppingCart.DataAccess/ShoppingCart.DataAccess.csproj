@@ -19,4 +19,8 @@
     <ProjectReference Include="..\ShoppingCart.Model\ShoppingCart.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>
