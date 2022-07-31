@@ -78,16 +78,18 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+             var category= categoryRepository.Find(id);
+            return View(category);
         }
 
         // POST: CategoryController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, ProductsCategories category)
         {
             try
             {
+                categoryRepository.Delete(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
