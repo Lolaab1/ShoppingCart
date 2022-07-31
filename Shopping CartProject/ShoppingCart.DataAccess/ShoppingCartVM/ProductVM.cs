@@ -1,13 +1,14 @@
-﻿using System;
+﻿using ShoppingCart.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCart.Model
+namespace ShoppingCart.DataAccess.ShoppingCartVM
 {
-    public class Products
+    public class ProductVM
     {
         public int Id { get; set; }
         [Required]
@@ -18,7 +19,8 @@ namespace ShoppingCart.Model
         public double Price { get; set; }
         public double DiscountPercentage { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-     
-        public ProductsCategories productsCategories { get; set; }
+        public int CategoriesId { get; set; }
+
+        public List<ProductsCategories> productsCategories { get; set; }
     }
 }

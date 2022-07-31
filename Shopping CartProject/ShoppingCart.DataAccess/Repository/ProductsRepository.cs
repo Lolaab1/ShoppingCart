@@ -1,4 +1,5 @@
-﻿using ShoppingCart.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using ShoppingCart.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,13 +33,13 @@ namespace ShoppingCart.DataAccess.Repository
 
         public Products Find(int id)
         {
-           var product = db.products.SingleOrDefault(p => p.Id == id);
+           var product = db.products.Include(c => c.productsCategories).SingleOrDefault(p => p.Id == id);
             return product;
         }
 
         public IList<Products> List()
         {
-            return db.products.ToList();
+            return db.products.Include(c=>c.productsCategories).ToList();
         }
 
         public void Update(int id, Products NewProduct)
