@@ -26,7 +26,8 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // GET: CategoryController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var categories = categoryRepository.Find(id);
+            return View(categories);
         }
 
         // GET: CategoryController/Create
@@ -38,10 +39,11 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // POST: CategoryController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ProductsCategories category)
         {
             try
             {
+                categoryRepository.Add(category);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -53,7 +55,8 @@ namespace ShoppingCart.Areas.Admin.Controllers
         // GET: CategoryController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            //var category=categoryRepository.Find(id);
+            return View(category);
         }
 
         // POST: CategoryController/Edit/5
